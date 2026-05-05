@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - SoulPixels</title>
+
+    <!-- Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="auth-body">
+
+<div class="auth-container">
+
+    <!-- Logo -->
+    <h1 class="logo">🌐 SoulPixels</h1>
+    <h2>Welcome Back 👋</h2>
+
+    <!-- Username (FIXED STRUCTURE) -->
+    <div class="input-box">
+        <input type="text" id="loginUser" placeholder="👤 Username">
+    </div>
+
+    <!-- Password (SAME STRUCTURE) -->
+    <div class="input-box password-box">
+        <input type="password" id="loginPass" placeholder="🔒 Password">
+        <span onclick="togglePassword('loginPass', this)">👁️</span>
+    </div>
+
+    <!-- Login Button -->
+    <button onclick="login()">Login</button>
+
+    <!-- Redirect -->
+    <p>
+        Don’t have an account? 
+        <a href="signup.html">Signup</a>
+    </p>
+
+</div>
+
+<!-- JS -->
+<script src="script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,232 @@
+/* ===== GLOBAL ===== */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f4f4f4;
+    text-align: center;
+    transition: 0.3s;
+}
+
+/* ===== HEADER ===== */
+header {
+    padding: 25px 10px;
+    color: white;
+    text-align: center;
+
+    background: linear-gradient(270deg, #2575fc, #6a11cb, #ff7b00);
+    background-size: 600% 600%;
+    animation: headerGradient 8s ease infinite;
+
+    box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+}
+
+header h1 {
+    margin: 0;
+}
+
+header p {
+    margin: 5px 0;
+}
+
+/* HEADER BUTTONS */
+header button {
+    margin: 10px 5px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+
+    background: rgba(255,255,255,0.2);
+    color: white;
+
+    cursor: pointer;
+}
+
+header button:hover {
+    background: rgba(255,255,255,0.4);
+}
+
+/* ===== SECTIONS ===== */
+section {
+    margin: 20px auto;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    width: 80%;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+/* ===== TEXTAREA ===== */
+textarea {
+    width: 80%;
+    height: 100px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+/* ===== INPUT ===== */
+input {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+/* ===== BUTTON ===== */
+button {
+    padding: 10px 20px;
+    margin: 5px;
+    border: none;
+    background: #007bff;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #0056b3;
+}
+
+/* ===== SEARCH ===== */
+#searchInput {
+    width: 60%;
+    padding: 10px;
+    margin: 15px;
+    border-radius: 5px;
+}
+
+/* ===== GALLERY ===== */
+#gallery img {
+    width: 150px;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+/* ===== POSTS (FIXED) ===== */
+.post-item {
+    background: #f1f1f1;
+    margin: 15px auto;
+    padding: 15px;
+    border-radius: 10px;
+    width: 70%;
+    text-align: left;
+
+    color: #000;
+}
+
+/* comment input */
+.post-item input {
+    padding: 8px;
+    border-radius: 5px;
+    border: none;
+}
+
+/* ===== DARK MODE ===== */
+.dark {
+    background: #121212;
+    color: white;
+}
+
+/* DARK SECTIONS */
+.dark section {
+    background: #1e1e1e;
+}
+
+/* DARK INPUT */
+.dark textarea,
+.dark input {
+    background: #333;
+    color: white;
+    border: 1px solid #555;
+}
+
+/* DARK POSTS FIX */
+.dark .post-item {
+    background: #2a2a2a;
+    color: white;
+}
+
+/* DARK COMMENT INPUT */
+.dark .post-item input {
+    background: #333;
+    color: white;
+}
+
+/* DARK HEADER */
+.dark header {
+    background: linear-gradient(135deg, #1e1e1e, #2c2c2c);
+}
+
+/* ===== AUTH PAGE (LOGIN/SIGNUP SAFE) ===== */
+.auth-body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+}
+
+/* AUTH CARD */
+.auth-container {
+    background: rgba(255,255,255,0.1);
+    backdrop-filter: blur(10px);
+
+    padding: 30px;
+    border-radius: 12px;
+
+    width: 300px;
+    text-align: center;
+    color: white;
+}
+
+/* INPUT BOX */
+.auth-container .input-box {
+    width: 260px;
+    margin: 10px auto;
+}
+
+.auth-container .input-box input {
+    width: 100%;
+    padding: 12px;
+    border-radius: 8px;
+    border: none;
+}
+
+/* PASSWORD */
+.auth-container .password-box {
+    position: relative;
+}
+
+/* EYE ICON */
+.auth-container .password-box span {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+/* AUTH BUTTON */
+.auth-container button {
+    width: 260px;
+    padding: 12px;
+    margin-top: 10px;
+    border-radius: 8px;
+    background: #ff7b00;
+}
+
+.auth-container button:hover {
+    background: #ff9500;
+}
+
+/* LINKS */
+.auth-container a {
+    color: #ffd700;
+}
+
+/* ===== ANIMATION ===== */
+@keyframes headerGradient {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}

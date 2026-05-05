@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Signup - SoulPixels</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="auth-body">
+
+<div class="auth-container">
+
+    <h1 class="logo">🌐 SoulPixels</h1>
+    <h2>Create Account ✨</h2>
+
+    <input type="text" id="username" placeholder="👤 Username">
+
+    <!-- PASSWORD -->
+    <div class="password-box">
+        <input type="password" id="password" placeholder="🔒 Password">
+        <span onclick="togglePassword('password', this)">👁️</span>
+    </div>
+
+    <!-- CONFIRM PASSWORD -->
+    <div class="password-box">
+        <input type="password" id="confirmPass" placeholder="🔒 Confirm Password">
+        <span onclick="togglePassword('confirmPass', this)">👁️</span>
+    </div>
+
+    <button onclick="signup()">Signup</button>
+
+    <p>Already have an account? <a href="login.html">Login</a></p>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

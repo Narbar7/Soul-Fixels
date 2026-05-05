@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>SoulPixels</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>SoulPixels</h1>
+    <p>Share Images & Spread Positivity 💙</p>
+    
+    <button onclick="toggleDarkMode()">🌙 Dark</button>
+    <button onclick="logout()">Logout</button>
+</header>
+
+<!-- SEARCH -->
+<input type="text" id="searchInput" placeholder="Search images..." onkeyup="searchImages()">
+
+<!-- IMAGE UPLOAD -->
+<section class="upload">
+    <h2>Upload Image</h2>
+    <input type="file" id="imageInput">
+    <button onclick="uploadImage()">Upload</button>
+</section>
+
+<!-- GALLERY -->
+<section id="gallery">
+    <h2>Gallery</h2>
+</section>
+
+<!-- POSTS -->
+<section>
+    <h2>Share Your Thoughts</h2>
+    <textarea id="postText" placeholder="Write something..."></textarea><br>
+    <button onclick="addPost()">Post</button>
+</section>
+
+<!-- POSTS DISPLAY -->
+<section id="posts">
+    <h2>Community Posts</h2>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
